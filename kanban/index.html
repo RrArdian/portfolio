@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div id="control">
+        <h1>KANBAN BOARD</h1>
+        <p>Available Command:</p>
+        <ul>
+            <li>create "Title here"</li>
+            <li>move (number) (action)</li>
+            <li>remove (number)</li>
+        </ul>
+        <p><b>Command Input</b> <input type="text" id="input" name="input" placeholder="Place your command here"/>
+            <button class="button" id="btnSend" onclick="sendData()">Submit</button></p>
+    </div>
+    <div id="main">
+        <div class="board">
+            <div class="title">TODO</div>
+            <div id="todo"></div>
+        </div>
+        <div class="board">
+            <div class="title">DOING</div>
+            <div id="doing"></div>
+        </div>
+        <div class="board">
+            <div class="title">DONE</div>
+            <div id="done"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

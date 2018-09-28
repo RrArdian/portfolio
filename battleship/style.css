@@ -1,0 +1,33 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+}
+
+h1 {
+    font-style: italic;
+    color: #373fff;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
+    border: none;
+
+}
+
+th {
+    height: 20px;
+}
+
+.tdStyle {
+    width: 50px;
+}
+
+.row {
+    margin: 5px;
+}
+
+.panel {
+    margin: 5px;
+}

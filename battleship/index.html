@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+</head>  
+<body>
+    <h1>Batlleship</h1>
+    <div>
+        <form onsubmit="return false;">
+            <p>
+                Input Position <input type="text" name="position" placeholder="Input (row,column)" required>
+            </p>
+            <p>
+                Type <select name="type" required>
+                    <option value="carrier">CARRIER</option>
+                    <option value="battleship">BATTLESHIP</option>
+                    <option value="destroyer">DESTROYER</option>
+                    <option value="submarine">SUBMARINE</option>
+                    <option value="patrol">PATROL BOAT</option>
+                </select>
+            </p>
+            <p>
+                Turn <select name="turn" required>
+                    <option value="right">RIGHT</option>
+                    <option value="down">DOWN</option>
+                </select>
+            </p>
+            <div class="row">
+                <button id="sendDataOne" onclick="submitData(1)">
+                    Send Data Player 1
+                </button>
+                <button id="sendDataTwo" onclick="submitData(2)">
+                    Send Data Player 2
+                </button>
+                <button id="btnStartPlay" onclick="startPlay()" disabled>
+                    Start Play
+                </button>
+                <button id="btnSalvo" onclick="setSalvo()" disabled>
+                    Use Salvo
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="panel">
+            <div class="title">Board</div>
+            <table id="board"></table>
+            <p>Input Coordinat <input type="text" id="inputShot" name="play" placeholder="Coordinat (row,column)" required></p>
+            <button id="btnShotOne" onclick="play()" disabled>PLAYER 1 SHOT</button>
+            <button id="btnShotTwo" onclick="play()" disabled>PLAYER 2 SHOT</button>
+        </div>
+        <div class="panel">
+            <div class="title">Cheat</div>
+            <table id="cheatBoard"></table>
+        </div>
+    </div>
+</body>
+</html>
